@@ -21,13 +21,15 @@ Where `<branch>` is one of these branches:
 * `opt-gnu-7.x` - GNU GCC 7.3.1 (deprecated)
 * `opt-gnu-8.x` - GNU GCC 8.2.1
 * `opt-linaro-7.x` - Linaro GCC 7.3.1
+* `elf-9.x` - GNU GCC ELF 9.1.0
+* `linux-gnu-10.x` - GNU GCC 10.0.0 (experimental)
 
 ## Using the toolchain
 
 I'm assuming that you're building kernels and have all patches included in your kernel source. For that, pass `CROSS_COMPILE` variable as one of `make` parameters.
 
 ```bash
-$ make ARCH=arm64 CROSS_COMPILE=</path/to/toolchain>/bin/aarch64-opt-linux-android- ...
+$ make ARCH=arm64 CROSS_COMPILE=</path/to/toolchain>/bin/<toolchain-prefix>- ...
 ```
 
 I recommend this way since exporting `CROSS_COMPILE` doesn't always work.
