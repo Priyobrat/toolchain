@@ -13,7 +13,7 @@ _People are becoming more and more weird these days._
 Run this command anywhere on your environment:
 
 ```bash
-$ git clone git://github.com/krasCGQ/aarch64-linux-android -b <branch> --depth=1
+$ git clone git://github.com/TTTT55/aarch64-linux-android -b <branch> --depth=1
 ```
 
 Where `<branch>` is one of these branches:
@@ -23,6 +23,7 @@ Where `<branch>` is one of these branches:
 * `opt-linaro-7.x` - Linaro GCC 7.3.1
 * `elf-9.x` - GNU GCC ELF 9.1.0
 * `linux-gnu-10.x` - GNU GCC 10.0.0 (experimental)
+* `gcc-4.9` - GCC 4.9 Google
 
 ## Using the toolchain
 
